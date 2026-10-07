@@ -1,1 +1,3 @@
+*.apk
+app-debug.apk
 local.properties
