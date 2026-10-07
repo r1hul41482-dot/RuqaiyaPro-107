@@ -5,7 +5,7 @@ android {
     defaultConfig {
         applicationId = "com.ruqaiyapro"
         minSdk = 26
-        targetSdk = 30
+        targetSdk = 34
         versionCode = 113
         versionName = "113-GOD-CHIBI-FINAL"
         multiDexEnabled = true
