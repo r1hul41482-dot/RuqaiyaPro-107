@@ -4,6 +4,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun UpdateScreen(){
     var code by remember { mutableStateOf("# Python: add_feature(114, 'My Feature')") }
