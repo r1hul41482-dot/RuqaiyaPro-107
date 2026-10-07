@@ -10,7 +10,7 @@ android {
         minSdk = 24
         targetSdk = 34
         versionCode = 107
-        versionName = "107-FINAL-BossRubel"
+        versionName = "107-FINAL-FIXED"
     }
     buildTypes { release { isMinifyEnabled = false } }
     compileOptions {
@@ -36,9 +36,7 @@ dependencies {
     implementation("androidx.camera:camera-view:1.3.1")
     implementation("com.google.mlkit:face-detection:16.1.7")
     implementation("com.google.mlkit:object-detection:17.0.1")
-    implementation("com.google.android.gms:play-services-mlkit-face-detection:17.1.0")
     implementation("androidx.work:work-runtime-ktx:2.8.1")
     implementation("androidx.datastore:datastore-preferences:1.0.0")
     implementation("io.coil-kt:coil-compose:2.4.0")
-    implementation("com.google.ai.client.generativeai:generativeai:0.3.1")
 }
