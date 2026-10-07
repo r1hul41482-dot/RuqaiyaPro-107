@@ -9,11 +9,18 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-      - name: Build
+      - name: Clean Termux paths
         run: |
+          rm -f local.properties
           echo "sdk.dir=$ANDROID_HOME" > local.properties
+          cat local.properties
+          ls $ANDROID_HOME/build-tools/
+          echo "Installed build-tools:"
+          $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --list | grep build-tools
+      - name: Build APK
+        run: |
           chmod +x gradlew
-          ./gradlew assembleDebug -x lint -x test --no-daemon
+          ./gradlew assembleDebug -x lint -x test --no-daemon --stacktrace
       - uses: actions/upload-artifact@v4
         with:
           name: RuqaiyaPro-107-FINAL
