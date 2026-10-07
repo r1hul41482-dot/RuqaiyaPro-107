@@ -9,15 +9,11 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-      - name: Setup Android SDK
-        run: |
-          echo "sdk.dir=$ANDROID_HOME" > local.properties
-          sdkmanager --install "platforms;android-34" "platforms;android-33" "build-tools;34.0.0" "build-tools;33.0.1" --verbose || true
-          sdkmanager --list | grep -E "build-tools|platforms"
       - name: Build APK
         run: |
+          echo "sdk.dir=$ANDROID_HOME" > local.properties
           chmod +x gradlew
-          ./gradlew assembleDebug --stacktrace -x lint -x test --no-daemon
+          ./gradlew assembleDebug --stacktrace --no-daemon -x lint -x test
       - uses: actions/upload-artifact@v4
         with:
           name: RuqaiyaPro-107-FINAL
