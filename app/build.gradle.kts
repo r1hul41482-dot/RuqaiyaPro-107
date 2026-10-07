@@ -1,7 +1,7 @@
 plugins { id("com.android.application"); id("org.jetbrains.kotlin.android") }
 android {
     namespace = "com.ruqaiyapro"
-    compileSdk = 33
+    compileSdk = 34
     defaultConfig {
         applicationId = "com.ruqaiyapro"
         minSdk = 26
