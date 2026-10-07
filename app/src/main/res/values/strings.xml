@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RuqaiyaPro</string>
+    <string name="boss_name">Boss Rubel</string>
+    <string name="hotword_sleeping_notif">Ruqaiya ghumacche... Bolo Hey Ruqaiya</string>
+    <string name="wake_greeting">Ji Rubel Boss bolo...</string>
+    <string name="boss_recognized_toast">Arre Boss Rubel eshe gecho! 😍</string>
+    <string name="whatsapp_auto_reply_text">Boss Rubel busy ache, pore reply dibe - Ruqaiya bolchi</string>
+    <string name="accessibility_desc">RuqaiyaPro Accessibility Service for WhatsApp Auto-Reply and Broadcast for Boss Rubel.</string>
+</resources>

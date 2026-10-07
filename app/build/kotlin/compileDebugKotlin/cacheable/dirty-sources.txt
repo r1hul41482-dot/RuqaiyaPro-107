@@ -1,0 +1,13 @@
+/data/data/com.termux/files/home/downloads/RuqaiyaPro-Working/RuqaiyaPro/app/src/main/java/com/ruqaiyapro/worker/AutoFixWorker.kt
+/data/data/com.termux/files/home/downloads/RuqaiyaPro-Working/RuqaiyaPro/app/src/main/java/com/ruqaiyapro/service/RuqaiyaHotwordService.kt
+/data/data/com.termux/files/home/downloads/RuqaiyaPro-Working/RuqaiyaPro/app/src/main/java/com/ruqaiyapro/ui/screens/SettingsScreen.kt
+/data/data/com.termux/files/home/downloads/RuqaiyaPro-Working/RuqaiyaPro/app/src/main/java/com/ruqaiyapro/service/RuqaiyaNotificationListener.kt
+/data/data/com.termux/files/home/downloads/RuqaiyaPro-Working/RuqaiyaPro/app/src/main/java/com/ruqaiyapro/ai/FaceRecognitionManager.kt
+/data/data/com.termux/files/home/downloads/RuqaiyaPro-Working/RuqaiyaPro/app/src/main/java/com/ruqaiyapro/db/KhataDatabaseHelper.kt
+/data/data/com.termux/files/home/downloads/RuqaiyaPro-Working/RuqaiyaPro/app/src/main/java/com/ruqaiyapro/MainActivity.kt
+/data/data/com.termux/files/home/downloads/RuqaiyaPro-Working/RuqaiyaPro/app/src/main/java/com/ruqaiyapro/system/PhoneControlManager.kt
+/data/data/com.termux/files/home/downloads/RuqaiyaPro-Working/RuqaiyaPro/app/src/main/java/com/ruqaiyapro/ai/AiSettingsManager.kt
+/data/data/com.termux/files/home/downloads/RuqaiyaPro-Working/RuqaiyaPro/app/src/main/java/com/ruqaiyapro/ai/CommandDispatcher.kt
+/data/data/com.termux/files/home/downloads/RuqaiyaPro-Working/RuqaiyaPro/app/src/main/java/com/ruqaiyapro/ai/FaceAnalyzer.kt
+/data/data/com.termux/files/home/downloads/RuqaiyaPro-Working/RuqaiyaPro/app/src/main/java/com/ruqaiyapro/code/CodeFixerEngine.kt
+/data/data/com.termux/files/home/downloads/RuqaiyaPro-Working/RuqaiyaPro/app/src/main/java/com/ruqaiyapro/service/RuqaiyaAccessibilityService.kt

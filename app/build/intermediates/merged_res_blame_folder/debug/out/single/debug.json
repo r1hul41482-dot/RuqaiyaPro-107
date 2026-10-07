@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.ruqaiyapro.app-merged_res-46:/layout_overlay_chibi.xml.flat",
+        "source": "com.ruqaiyapro.app-main-48:/layout/overlay_chibi.xml"
+    },
+    {
+        "merged": "com.ruqaiyapro.app-merged_res-46:/xml_accessibility_service_config.xml.flat",
+        "source": "com.ruqaiyapro.app-main-48:/xml/accessibility_service_config.xml"
+    },
+    {
+        "merged": "com.ruqaiyapro.app-merged_res-46:/xml_backup_rules.xml.flat",
+        "source": "com.ruqaiyapro.app-main-48:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.ruqaiyapro.app-merged_res-46:/xml_data_extraction_rules.xml.flat",
+        "source": "com.ruqaiyapro.app-main-48:/xml/data_extraction_rules.xml"
+    }
+]

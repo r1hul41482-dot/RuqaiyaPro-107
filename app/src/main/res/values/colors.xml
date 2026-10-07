@@ -1,0 +1,9 @@
+<resources>
+    <color name="pixel_black">#0F172A</color>
+    <color name="pixel_surface">#1E293B</color>
+    <color name="pixel_cyan">#06B6D4</color>
+    <color name="chibi_pink">#F43F5E</color>
+    <color name="chibi_glow">#38BDF8</color>
+    <color name="text_primary">#F8FAFC</color>
+    <color name="text_secondary">#94A3B8</color>
+</resources>
