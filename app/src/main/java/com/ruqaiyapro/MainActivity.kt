@@ -16,9 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import com.ruqaiyapro.service.RuqaiyaHotwordService
-import com.ruqaiyapro.ui.screens.Features107Screen
-import com.ruqaiyapro.ui.screens.MainDashboardScreen
-import com.ruqaiyapro.ui.screens.SettingsScreen
+import com.ruqaiyapro.ui.screens.*
 
 class MainActivity : ComponentActivity() {
     private val perms = arrayOf(android.Manifest.permission.RECORD_AUDIO, android.Manifest.permission.CAMERA)
@@ -41,25 +39,33 @@ class MainActivity : ComponentActivity() {
     @Composable
     fun MainScreen(){
         var sel by remember { mutableStateOf(0) }
-        val tabs = listOf("Hub","Face","Control","Auto","107","Settings")
+        val tabs = listOf("Hub","Face","Ctrl","Auto","107","Upd","Set")
         Scaffold(bottomBar={
             NavigationBar{
-                tabs.forEachIndexed{ i,t-> NavigationBarItem(selected=sel==i, onClick={sel=i}, icon={Text("${i+1}")}, label={Text(t)}) }
+                tabs.forEachIndexed{ i,t-> NavigationBarItem(selected=sel==i, onClick={sel=i}, icon={Text(t.first().toString())}, label={Text(t)}) }
             }
         }){ pad->
             Box(Modifier.padding(pad).fillMaxSize()){
                 when(sel){
                     0 -> MainDashboardScreen(onStartService={checkAndStart()}, onStopService={stopHotword()})
-                    1 -> Box(Modifier.padding(16.dp)){ Text("Face - Boss Rubel Tracking") }
-                    2 -> Box(Modifier.padding(16.dp)){ Text("Control - WiFi/BT/Flash/SOS") }
-                    3 -> Box(Modifier.padding(16.dp)){ Text("Auto - WhatsApp Auto") }
+                    1 -> FaceScreenGod()
+                    2 -> ControlGodScreen()
+                    3 -> AutoGodScreen()
                     4 -> Features107Screen()
-                    5 -> SettingsScreen()
+                    5 -> UpdateScreen()
+                    6 -> SettingsScreen()
                 }
             }
         }
     }
 }
+
+@Composable
+fun FaceScreenGod(){ Column(Modifier.padding(16.dp)){ Text("Face God - Boss Rubel Only Voice"); Text("If not Boss face, no command works") } }
+@Composable
+fun ControlGodScreen(){ Column(Modifier.padding(16.dp)){ Text("Control God Mode - All ON/OFF"); Button(onClick={}){Text("God Mode ON - All 107 ON")} } }
+@Composable
+fun AutoGodScreen(){ Column(Modifier.padding(16.dp)){ Text("Auto God - WhatsApp Auto Send") } }
 
 @Composable
 fun RuqaiyaProTheme(content:@Composable ()->Unit){
